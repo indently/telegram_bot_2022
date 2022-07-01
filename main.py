@@ -44,6 +44,7 @@ def handle_message(update, context):
 
     # React to group messages only if users mention the bot directly
     if message_type == 'group':
+        # Replace with your bot username
         if '@bot19292bot' in text:
             new_text = text.replace('@bot19292bot', '').strip()
             response = handle_response(new_text)
